@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_calendary"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        android:title="Главная" />
+
+    <item
+        android:id="@+id/navigation_water"
+        android:icon="@drawable/ic_baseline_water_damage_24"
+        android:title="@string/title_water" />
+
+    <item
+        android:id="@+id/navigation_build"
+        android:icon="@drawable/ic_baseline_analytics_24"
+        android:title="@string/title_program" />
+    <item
+        android:id="@+id/navigation_marathon"
+        android:icon="@drawable/ic_baseline_directions_run_24"
+        android:title="@string/title_marathon" />
+
+</menu>

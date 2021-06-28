@@ -1,0 +1,1890 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MAIN_LL"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_first_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_first_start_hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30sp"
+                android:fontFamily="@font/bebasneueregular"
+                android:text="Привет!"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/tv_first_start_trener_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30sp"
+                android:fontFamily="@font/bebasneueregular"
+                android:text="Совсем скоро я буду твоим\nличным тренером"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_first_start_about_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30sp"
+                android:fontFamily="@font/bebasneueregular"
+                android:text="А пока расскажи немного о себе:"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_questions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30sp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_fs_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bebasneueregular"
+                        android:text="Имя:"
+                        android:textColor="#7BEAFF"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/tv_fs_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bebasneueregular"
+                        android:text="Возраст:"
+                        android:textColor="#7BEAFF"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/tv_fs_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bebasneueregular"
+                        android:text="Рост:"
+                        android:textColor="#7BEAFF"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/tv_fs_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bebasneueregular"
+                        android:text="Вес:"
+                        android:textColor="#7BEAFF"
+                        android:textSize="40sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20sp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etv_fs_name_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/etv_fs_age_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/etv_fs_height_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <EditText
+                        android:id="@+id/etv_fs_weight_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rdbtns_fs_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/rdbtn_fs_woman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Женский"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FBFBFB" />
+
+                <RadioButton
+                    android:id="@+id/rdbtn_fs_man"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Мужской" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100sp"
+                android:fontFamily="@font/bebasneuebold"
+                android:text="Готово!"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:backgroundTint="#FFFFFF" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/flAnalytics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/btn_backinmainanal"
+                            style="@android:style/Widget.Holo.ImageButton"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/bebasneuebold"
+                            android:gravity="center"
+                            android:text="Аналитика"
+                            android:textColor="#6ec6e6"
+                            android:textSize="60sp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_marginTop="10sp"
+                        android:background="#FFFFFF">
+
+                        <com.jjoe64.graphview.GraphView
+                            android:id="@+id/graph"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150sp"
+                        android:layout_marginTop="10sp"
+                        android:background="#FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bebasneuebold"
+                                    android:gravity="center|top"
+                                    android:paddingTop="20sp"
+                                    android:text="Индекс тела:"
+                                    android:textColor="#3CB641"
+                                    android:textSize="36sp" />
+
+                                <TextView
+                                    android:id="@+id/index_field"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bebasneueregular"
+                                    android:gravity="center_horizontal"
+                                    android:text="Значение"
+                                    android:textColor="#000000"
+                                    android:textSize="36sp" />
+
+                                <TextView
+                                    android:id="@+id/index_comment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bebasneueregular"
+                                    android:gravity="center_horizontal"
+                                    android:shadowColor="@color/Green"
+                                    android:textSize="36sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="86sp">
+
+                    </FrameLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flAchievements"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/achievments_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/btn_backinmainach"
+                            style="@android:style/Widget.Holo.ImageButton"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/bebasneuebold"
+                            android:gravity="center"
+                            android:text="Достижения"
+                            android:textColor="#6ec6e6"
+                            android:textSize="60sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/ach_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_ach_name_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:fontFamily="@font/bebasneuebold"
+                                android:text="@string/ach_1_name"
+                                android:textColor="#000000"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/tv_ach_descr_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/tv_background_ach"
+                                android:fontFamily="@font/bebasneueregular"
+                                android:gravity="center"
+                                android:text="@string/ach_1_description"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/ach_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_ach_name_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:fontFamily="@font/bebasneuebold"
+                                android:text="@string/ach_2_name"
+                                android:textColor="#000000"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/tv_ach_descr_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#D6D6D6"
+                                android:fontFamily="@font/bebasneueregular"
+                                android:gravity="center"
+                                android:text="@string/ach_2_description"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="30sp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/ach_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_ach_name_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:fontFamily="@font/bebasneuebold"
+                                android:text="@string/ach_3_name"
+                                android:textColor="#000000"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/tv_ach_descr_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#D6D6D6"
+                                android:fontFamily="@font/bebasneueregular"
+                                android:gravity="center"
+                                android:text="@string/ach_3_description"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="30sp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/ach_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_ach_name_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:fontFamily="@font/bebasneuebold"
+                                android:text="@string/ach_4_name"
+                                android:textColor="#000000"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/tv_ach_descr_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#D6D6D6"
+                                android:fontFamily="@font/bebasneueregular"
+                                android:gravity="center"
+                                android:text="@string/ach_4_description"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/ach_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_ach_name_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:fontFamily="@font/bebasneuebold"
+                                android:text="@string/ach_5_name"
+                                android:textColor="#000000"
+                                android:textSize="40sp" />
+
+                            <TextView
+                                android:id="@+id/tv_ach_descr_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#D6D6D6"
+                                android:fontFamily="@font/bebasneueregular"
+                                android:gravity="center"
+                                android:text="@string/ach_5_description"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/achievments_footer"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"></LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_mainInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:id="@+id/fl_mainInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/ll_mainInfo_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="10sp"
+                                android:paddingBottom="10sp">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_info"
+                                    android:layout_width="250dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_info_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bebasneuebold"
+                                        android:text="Name"
+                                        android:textColor="#60d5ff"
+                                        android:textSize="70dp" />
+
+                                    <LinearLayout
+                                        android:id="@+id/ll_info_main"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_info_characteristics"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/tv_info_age"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/bebasneueregular"
+                                                android:text="Возраст:"
+                                                android:textColor="#000000"
+                                                android:textSize="30sp" />
+
+                                            <TextView
+                                                android:id="@+id/tv_info_weight"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/bebasneueregular"
+                                                android:text="рост:"
+                                                android:textColor="#000000"
+                                                android:textSize="30sp" />
+
+                                            <TextView
+                                                android:id="@+id/tv_info_height"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/bebasneueregular"
+                                                android:text="Вес:"
+                                                android:textColor="#000000"
+                                                android:textSize="30sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_info_values"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="right"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/tv_info_age_value"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/bebasneuebold"
+                                                android:text="Age"
+                                                android:textColor="#60d5ff"
+                                                android:textSize="30sp"
+                                                android:visibility="visible" />
+
+                                            <TextView
+                                                android:id="@+id/tv_info_height_value"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/bebasneuebold"
+                                                android:text="height"
+                                                android:textColor="#60d5ff"
+                                                android:textSize="30sp"
+                                                android:visibility="visible" />
+
+                                            <TextView
+                                                android:id="@+id/tv_info_weight_value"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/bebasneuebold"
+                                                android:text="weight"
+                                                android:textColor="#60d5ff"
+                                                android:textSize="30sp"
+                                                android:visibility="visible" />
+
+                                            <EditText
+                                                android:id="@+id/etv_age"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="34dp"
+                                                android:ems="10"
+                                                android:inputType="textPersonName"
+                                                android:visibility="gone" />
+
+                                            <EditText
+                                                android:id="@+id/etv_height"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="36dp"
+                                                android:ems="10"
+                                                android:inputType="textPersonName"
+                                                android:visibility="gone" />
+
+                                            <EditText
+                                                android:id="@+id/etv_weight"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="35dp"
+                                                android:ems="10"
+                                                android:inputType="textPersonName"
+                                                android:visibility="gone" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/btn_change_info"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/bebasneuebold"
+                                        android:text="изменить"
+                                        android:textColor="#000000"
+                                        android:textSize="30sp"
+                                        app:backgroundTint="#FFFFFF"
+                                        app:rippleColor="#FFFFFF"
+                                        app:strokeColor="#000000" />
+
+                                </LinearLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/fl_buttons"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="right">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="20sp"
+                                        android:gravity="center|right"
+                                        android:orientation="vertical">
+
+                                        <ImageButton
+                                            android:id="@+id/btn_ach"
+                                            style="@android:style/Widget.DeviceDefault.ImageButton"
+                                            android:layout_width="110dp"
+                                            android:layout_height="110dp"
+                                            android:background="?attr/selectableItemBackgroundBorderless"
+                                            android:scaleType="fitXY"
+                                            app:srcCompat="@mipmap/achievments1" />
+
+                                        <FrameLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="7sp">
+
+                                        </FrameLayout>
+
+                                        <ImageButton
+                                            android:id="@+id/btn_analytics"
+                                            android:layout_width="110dp"
+                                            android:layout_height="110dp"
+                                            android:background="?attr/selectableItemBackgroundBorderless"
+                                            android:scaleType="fitXY"
+                                            app:srcCompat="@mipmap/analytics1" />
+                                    </LinearLayout>
+
+                                </FrameLayout>
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_task_today"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <FrameLayout
+                            android:id="@+id/fl_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/ll_data"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_data_day"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bebasneuebold"
+                                    android:text="23"
+                                    android:textColor="#6ec6e6"
+                                    android:textSize="100dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_data_month"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bebasneueregular"
+                                    android:text="марта"
+                                    android:textColor="#000000"
+                                    android:textSize="70sp" />
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tv_today"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:fontFamily="@font/bebasneueregular"
+                            android:text="Задачи:"
+                            android:textColor="#6ec6e6"
+                            android:textSize="50dp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_tasks_and_chb"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10sp"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:id="@+id/fl_tasks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_tasks"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tasksToday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bebasneueregular"
+                                        android:textColor="#000000"
+                                        android:textSize="30sp" />
+                                </LinearLayout>
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/fl_chb"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="20dp">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_chb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:orientation="vertical" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_checkboxes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="40sp"
+                            android:fontFamily="@font/bebasneuebold"
+                            android:text="изменить"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#000000"
+                            android:textColorLink="#000000"
+                            android:textSize="30sp"
+                            app:backgroundTint="#FFFFFF"
+                            app:rippleColor="#000000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_btns_water_n_workouts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_percents"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="66dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="150sp"
+                                    android:layout_height="150sp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/water_button" />
+
+                                <TextView
+                                    android:id="@+id/tv_water_percents"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/bebasneuebold"
+                                    android:gravity="center"
+                                    android:text="0%"
+                                    android:textColor="#000000"
+                                    android:textSize="50sp" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="68dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageView2"
+                                    android:layout_width="150sp"
+                                    android:layout_height="150sp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/workouts_button" />
+
+                                <TextView
+                                    android:id="@+id/tv_workouts_percents"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/bebasneuebold"
+                                    android:gravity="center"
+                                    android:text="0%"
+                                    android:textColor="#000000"
+                                    android:textSize="50dp" />
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btns_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tv_percents_water_tag"
+                                android:layout_width="143dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/bebasneuebold"
+                                android:gravity="center"
+                                android:text="Баланс воды"
+                                android:textColor="#6ec6e6"
+                                android:textSize="36dp" />
+
+                            <TextView
+                                android:id="@+id/tv_percents_workouts_tag"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/bebasneuebold"
+                                android:gravity="center"
+                                android:text="Тренировки"
+                                android:textColor="#6EE670"
+                                android:textSize="36dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp">
+
+                    </FrameLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_water"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_water"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgv_drop_water"
+                        android:layout_width="match_parent"
+                        android:layout_height="200sp"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@drawable/water" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_howml_water"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_yourwater"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bebasneueregular"
+                            android:text="0"
+                            android:textColor="#6ec6e6"
+                            android:textSize="60sp" />
+
+                        <TextView
+                            android:id="@+id/tv_howml_water"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/bebasneueregular"
+                            android:text="/2000"
+                            android:textColor="#67D4FF"
+                            android:textSize="60sp" />
+
+                        <TextView
+                            android:id="@+id/tv_ml_water"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/bebasneuebold"
+                            android:text="мл"
+                            android:textColor="#FFFFFF"
+                            android:textColorHighlight="#FFFFFF"
+                            android:textSize="35sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_howmanywater"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_howmanywater"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bebasneueregular"
+                        android:text="Сколько вы выпили?"
+                        android:textColor="#000000"
+                        android:textSize="36sp" />
+
+                    <EditText
+                        android:id="@+id/etv_howmanywater"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="10"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_add_water"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:fontFamily="@font/bebasneuebold"
+                    android:text="добавить"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#FBF8F8"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="24sp"
+                    app:backgroundTint="#FBFBFB"
+                    app:backgroundTintMode="add"
+                    app:strokeColor="#FFFDFD" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_program"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ScrollView
+                android:id="@+id/scrollChooseProgram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_choose_a_program"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:isScrollContainer="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_chapr_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_program_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/bebasneuebold"
+                            android:text="Выбери программу\nпод себя"
+                            android:textAlignment="center"
+                            android:textColor="@color/base"
+                            android:textSize="60sp" />
+
+                        <TextView
+                            android:id="@+id/tv_program_title_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20sp"
+                            android:fontFamily="@font/bebasneueregular"
+                            android:text="нажми на интересующий тип и наш алгоритм подберет програму для тебя "
+                            android:textAlignment="gravity"
+                            android:textColor="#000000"
+                            android:textSize="36sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_sport_types"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imgbtn_weight_loss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="300dp"
+                            android:layout_marginTop="10sp"
+                            app:srcCompat="@drawable/weight_loss" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtn_maintaining"
+                            android:layout_width="wrap_content"
+                            android:layout_height="300dp"
+                            android:layout_marginTop="10sp"
+                            app:srcCompat="@drawable/maintenance" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtn_streight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="300dp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginBottom="80sp"
+                            app:srcCompat="@drawable/streight" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/scrollSelectProgram"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/ll_program"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:id="@+id/fl_name_of_program"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/nameOfProgram"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/bebasneuebold"
+                            android:shadowColor="#6ec6e6"
+                            android:textColor="#6ec6e6"
+                            android:textSize="50sp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fl_days"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/ll_days"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/fl_program_block_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="30dp"
+                                android:background="@color/program_block">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_name_of_day_1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/bebasneuebold"
+                                        android:gravity="center_horizontal"
+                                        android:text="День 1"
+                                        android:textColor="#61DAFF"
+                                        android:textSize="36sp" />
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:id="@+id/monday_ll"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/monday_task"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/bebasneueregular"
+                                                android:textColor="#FFFFFF"
+                                                android:textSize="30sp" />
+                                        </LinearLayout>
+
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/fl_program_block_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="20dp"
+                                android:background="#2861A5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_name_of_day_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:fontFamily="@font/bebasneuebold"
+                                        android:gravity="center_horizontal"
+                                        android:text="День 2"
+                                        android:textColor="#61DAFF"
+                                        android:textSize="36sp" />
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:id="@+id/tuesday_ll"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/tuesday_task"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/bebasneueregular"
+                                                android:textColor="#FFFFFF"
+                                                android:textSize="30sp" />
+                                        </LinearLayout>
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/fl_program_block_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="20dp"
+                                android:background="#2861A5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_name_of_day_3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:fontFamily="@font/bebasneuebold"
+                                        android:gravity="center_horizontal"
+                                        android:text="День 3"
+                                        android:textColor="#61DAFF"
+                                        android:textSize="36sp" />
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:id="@+id/wednesday_ll"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/wednesday_task"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/bebasneueregular"
+                                                android:textColor="#FFFFFF"
+                                                android:textSize="30sp" />
+                                        </LinearLayout>
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/fl_program_block_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
+                                android:background="#2861A5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_name_of_day_4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:fontFamily="@font/bebasneuebold"
+                                        android:gravity="center_horizontal"
+                                        android:text="День 4"
+                                        android:textColor="#61DAFF"
+                                        android:textSize="36sp" />
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:id="@+id/thursday_ll"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/thursday_task"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/bebasneueregular"
+                                                android:textColor="#FFFFFF"
+                                                android:textSize="30sp" />
+                                        </LinearLayout>
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/fl_program_block_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
+                                android:background="#2861A5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_name_of_day_5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:fontFamily="@font/bebasneuebold"
+                                        android:gravity="center_horizontal"
+                                        android:text="День 5"
+                                        android:textColor="#61DAFF"
+                                        android:textSize="36sp" />
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:id="@+id/friday_ll"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/friday_task"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/bebasneueregular"
+                                                android:textColor="#FFFFFF"
+                                                android:textSize="30sp" />
+                                        </LinearLayout>
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/fl_program_block_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
+                                android:background="#2861A5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_name_of_day_6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:fontFamily="@font/bebasneuebold"
+                                        android:gravity="center_horizontal"
+                                        android:text="День 6"
+                                        android:textColor="#61DAFF"
+                                        android:textSize="36sp" />
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:id="@+id/saturday_ll"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/saturday_task"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/bebasneueregular"
+                                                android:textColor="#FFFFFF"
+                                                android:textSize="30sp" />
+                                        </LinearLayout>
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/fl_program_block_7"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="20dp"
+                                android:background="#2861A5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_name_of_day_7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:fontFamily="@font/bebasneuebold"
+                                        android:gravity="center_horizontal"
+                                        android:text="День 7"
+                                        android:textColor="#61DAFF"
+                                        android:textSize="36sp" />
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:id="@+id/sunday_ll"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/sunday_task"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/bebasneueregular"
+                                                android:textColor="#FFFFFF"
+                                                android:textSize="30sp" />
+                                        </LinearLayout>
+                                    </FrameLayout>
+
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp">
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_marathon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="267dp"
+                        android:alpha="0.6"
+                        app:srcCompat="@drawable/marathon_people" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bebasneuebold"
+                        android:gravity="center"
+                        android:text="МАРАФОН"
+                        android:textColor="#FFFFFF"
+                        android:textSize="120sp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:fontFamily="@font/bebasneueregular"
+                    android:text="Проверь свои навыки, улучши их и\nпознакомься с новыми людьми на\nнашем марафоне"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/btn_marathon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100sp"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/bebasneuebold"
+                    android:text="учавствовать"
+                    android:textColor="#000000"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="24sp"
+                    app:backgroundTint="#FFFFFF"
+                    app:backgroundTintMode="add"
+                    app:rippleColor="#FBFBFB" />
+
+                <TextView
+                    android:id="@+id/tv_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:clickable="true"
+                    android:fontFamily="@font/bebasneueregular"
+                    android:soundEffectsEnabled="true"
+                    android:text="@string/rules_marathon"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            app:itemIconTint="@color/grey1"
+            app:itemTextColor="@color/grey1"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/navigation">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_whatsurweighttoday"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/fl_window_wiywt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#DFDFDF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="300sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bebasneueregular"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="30sp"
+                    android:text="Какой у тебя вес сегодня?"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/edt_weighttoday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/btn_weighttoday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Далее"
+                    app:backgroundTint="#717171" />
+            </LinearLayout>
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_endweek"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_gratz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bebasneueregular"
+                android:gravity="clip_horizontal"
+                android:paddingTop="40sp"
+                android:paddingBottom="20sp"
+                android:text="Поздравляем! \n Вы прошли тренировочную неделю \n\n Предостовляем небольшую сводку ваших достижений:"
+                android:textAlignment="center"
+                android:textColor="#EDEDED"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_checkGraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Посмотреть график"
+                android:textColor="#000000"
+                app:backgroundTint="#FFFFFF" />
+
+            <FrameLayout
+                android:id="@+id/fl_graph"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:paddingTop="20sp"
+                android:visibility="gone">
+
+                <com.jjoe64.graphview.GraphView
+                    android:id="@+id/graph2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+            >
+
+
+            <LinearLayout
+                android:id="@+id/ll_howmanywater_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20sp"
+                android:paddingTop="40sp"
+                android:paddingRight="20sp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebasneueregular"
+                    android:text="Воды выпито:"
+                    android:textColor="#EDEDED"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_water_value_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebasneuebold"
+                    android:gravity="right"
+                    android:text="TextView"
+                    android:textColor="#EDEDED"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_howmanyweight_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebasneueregular"
+                    android:text="Сброшено килограмм:"
+                    android:textColor="#EDEDED"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_weight_value_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebasneuebold"
+                    android:gravity="right"
+                    android:text="TextView"
+                    android:textColor="#EDEDED"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_howmanyworkouts_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebasneueregular"
+                    android:text="Выполнено тренировок"
+                    android:textColor="#EDEDED"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_workouts_value_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bebasneuebold"
+                    android:gravity="right"
+                    android:text="TextView"
+                    android:textColor="#EDEDED"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_buttons_done"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="25sp"
+            android:paddingRight="25sp"
+            android:paddingBottom="50sp">
+
+            <Button
+                android:id="@+id/btn_another_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Выбрать"
+                android:textColor="#020202"
+                app:backgroundTint="#FFFFFF" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

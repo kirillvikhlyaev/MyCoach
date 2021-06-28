@@ -1,0 +1,152 @@
+<resources>
+<string name="app_name">MyCoach</string>
+<string name="title_calendary">Календарь</string>
+<string name="title_water">Вода</string>
+<string name="title_program">Программа</string>
+<string name="title_marathon">Марафон</string>
+
+    <!-- PROGRAMMS -->
+
+<string name="name_of_program_weightloss">НЕДЕЛЬНОЕ ПОХУДЕНИЕ</string>
+    <string name="weightloss_monday_howmany">9</string>
+    <string name="weightloss_monday">
+    1. Приседания - 20 раз\n
+    2. Планка - 15 секунд\n
+    3. Подъем туловища - 25 раз\n
+    4. Подскоки - 35 раз\n
+    5. Выпады - 15 раз\n
+    6. Стенка - 25 раз\n
+    7. Ситап-пресс - 10 раз\n
+    8. Захлестов голени - 10 раз\n
+    9. Отжимания - 5 раз</string>
+    <string name="weightloss_tuesday_howmany">8</string>
+    <string name="weightloss_tuesday">
+    1. Приседания - 10 раз\n
+    2. Планка - 30 секунд\n
+    3. Подъем туловища - 25 раз\n
+    4. Подскоки - 10 раз\n
+    5. Выпады - 25 раз\n
+    6. Стенка - 45 раз\n
+    7. Ситап-пресс - 35 раз\n
+    8. Захлестов голени - 20 раз</string>
+    <string name="weightloss_wednesday_howmany">9</string>
+    <string name="weightloss_wednesday">
+    1. Приседания - 15 раз\n
+    2. Планка - 40 секунд\n
+    3. Подъем туловища - 30 раз\n
+    4. Подскоки - 50 раз\n
+    5. Выпады - 25 раз\n
+    6. Стенка - 35 раз\n
+    7. Ситап-пресс - 30 раз\n
+    8. Захлестов голени - 20 раз\n
+    9. Отжимания - 10 раз</string>
+    <string name="weightloss_thursday_howmany">9</string>
+    <string name="weightloss_thursday">
+    1. Приседания - 10 раз\n
+    2. Планка - 30 секунд\n
+    3. Подъем туловища - 20 раз\n
+    4. Подскоки - 25 раз\n
+    5. Выпады - 15 раз\n
+    6. Стенка - 60 раз\n
+    7. Ситап-пресс - 55 раз\n
+    8. Захлестов голени - 35 раз\n
+    9. Отжимания - 20 раз</string>
+    <string name="weightloss_friday_howmany">9</string>
+    <string name="weightloss_friday">
+    1. Приседания - 25 раз\n
+    2. Планка - 60 секунд\n
+    3. Подъем туловища - 30 раз\n
+    4. Подскоки - 55 раз\n
+    5. Выпады - 60 раз\n
+    6. Стенка - 45 раз\n
+    7. Ситап-пресс - 40 раз\n
+    8. Захлестов голени - 20 раз\n
+    9. Отжимания - 30 раз</string>
+    <string name="weightloss_saturday_howmany">1</string>
+    <string name="weightloss_saturday">Отдых</string>
+    <string name="weightloss_sunday_howmany">1</string>
+    <string name="weightloss_sunday">Отдых</string>
+
+<string name="name_of_program_maintaining">4 дня в неделю</string>
+    <string name="maintaining_monday_howmany">3</string>
+    <string name="maintaining_monday">
+    1. Приседания - 10 раз\n
+    2. Планка - 20 секунд\n
+    3. Отжимания - 10 раз</string>
+    <string name="maintaining_tuesday_howmany">3</string>
+    <string name="maintaining_tuesday">
+    1. Приседания - 10 раз\n
+    2. Планка - 20 секунд\n
+    3. Отжимания - 10 раз</string>
+    <string name="maintaining_wednesday_howmany">3</string>
+    <string name="maintaining_wednesday">
+    1. Приседания - 10 раз\n
+    2. Планка - 20 секунд\n
+    3. Отжимания - 10 раз</string>
+    <string name="maintaining_thursday_howmany">1</string>
+    <string name="maintaining_thursday">Отдых</string>
+    <string name="maintaining_friday_howmany">3</string>
+    <string name="maintaining_friday">
+    1. Приседания - 10 раз\n
+    2. Планка - 20 секунд\n
+    3. Отжимания - 10 раз</string>
+    <string name="maintaining_saturday_howmany">1</string>
+    <string name="maintaining_saturday">Отдых</string>
+    <string name="maintaining_sunday_howmany">1</string>
+    <string name="maintaining_sunday">Отдых</string>
+
+<string name="name_of_program_strength">Силовая неделя</string>
+    <string name="strength_monday_howmany">4</string>
+    <string name="strength_monday">
+    1. Подтягивания на перекладине с весом - 5 подходов 5 раз \n
+    2. Жим гантелей стоя - 4 подхода 10 раз\n
+    3. Поднятие гантели перед собой - 3 подхода 10 раз\n
+    4. Подъем согнутых ног на перекладине на висе - 3 подхода до отказа</string>
+    <string name="strength_tuesday_howmany">5</string>
+    <string name="strength_tuesday">
+    1. Отжимания на брусьях - 5 подхода 7 раз\n
+    2. Сведение гантелей над головой стоя - 4 подхода 10 раз\n
+    3. Отжимания от пола - 4 подхода до отказа\n
+    4. Приседания с гантелями - 4 подхода 25 раз\n
+    5. Выпады с гателями - 3 подхода 15 раз</string>
+    <string name="strength_wednesday_howmany">1</string>
+    <string name="strength_wednesday">Отдых</string>
+    <string name="strength_thursday_howmany">4</string>
+    <string name="strength_thursday">
+    1. Подтягивания на перекладине - 3 подхода 10 раз\n
+    2. Отжимания на брусьях - 3 подхода 15 раз\n
+    3. Отжимания узким хватом - 4 подхода до отказа\n
+    4. Подскоки - 25 раз</string>
+    <string name="strength_friday_howmany">1</string>
+    <string name="strength_friday">Отдых</string>
+    <string name="strength_saturday_howmany">3</string>
+    <string name="strength_saturday">
+    1. Подтягивания - 5 подходов 10 раз\n
+    2. Подъем на носки с гантелями в руках - 5 подходов  30 раз\n
+    3. Подъем ног до касания перекладины - 4 подхода до отказа</string>
+    <string name="strength_sunday_howmany">3</string>
+    <string name="strength_sunday">
+    1. Отжимани от пола, ноги на диване - 10 подходов 10 раз\n
+    2. Подтягивания на перекладине обратным узким хватом - 4 подхода 10 раз\n
+    3. Приседания с гантелями - 7 подхода 15 раз</string>
+    <string name="rules_marathon"><u>Условия и правила участия</u></string>
+
+    <!-- ACHIEVEMENTS -->
+
+    <string name="ach_1_name">Герой недели</string>
+    <string name="ach_1_description">Выполнить тренировчную неделю</string>
+
+    <string name="ach_2_name">Игра на понижение</string>
+    <string name="ach_2_description">Сбросить вес в конце недели</string>
+
+    <string name="ach_3_name">Нет, я не из пустыни</string>
+    <string name="ach_3_description">Выпить больше предъявленной нормы дня</string>
+
+    <string name="ach_4_name">Человек из стали?</string>
+    <string name="ach_4_description">Выполнить вторую тренировочную неделю</string>
+
+    <string name="ach_5_name">Ну что, побегаем?</string>
+    <string name="ach_5_description">Зарегистрироваться в марафоне</string>
+
+
+</resources>
